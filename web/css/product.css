@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.viewimg {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.viewimg .mainimg {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.viewimg .clikimg {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 1.2rem;
+
+}
+
+.viewimg .clikimg img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.left_section {
+    padding: 1rem;
+
+}
+
+.left_section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.star {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d9cf6e;
+}
+
+
+
+.del {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.price h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+   
+ 
+}
+
+.p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #656565;
+    /* margin-top: 1rem; */
+    text-align: justify;
+}
+
+@media (max-width:567px) {
+    .p {
+        font-size: 1rem;
+    }
+}
+
+.deliver img {}
+
+.deliver h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.deliver p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #656565;
+}
+
+.releted h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+
+.card_design {
+   border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_name {
+    position: relative;
+    margin-bottom: .6rem;
+     overflow: hidden;
+}
+
+.img_name::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, transparent 70%, #282828);
+    z-index: 2;
+
+}
+
+.img_name img {
+    z-index: 1;
+    position: relative;
+    border-radius: .5rem .5rem 0 0;
+    transition: .35s ease-in-out;
+   
+}
+
+.img_name h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3 !important;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.card_design p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #656565;
+    margin-bottom: 1rem;
+    /* text-align: justify; */
+}
+
+.btnn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    padding: .5rem 1rem;
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: .4rem;
+      transition: .35s ease-in-out;
+    cursor: pointer;
+    
+}
+.rate:hover{
+ background:  #4F6D7A;
+}
+.add {
+    background: rgb(255, 128, 0);
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: .4rem;
+    transition: .35s ease-in-out;
+   
+    cursor: pointer;
+}
+.add:hover{
+        background: rgb(115, 63, 11);
+
+}
+.addd{
+        transform: translateY(8rem);
+
+}
+.card_design:hover .addd{
+ transform: translateY(0rem);
+ z-index: 3;
+}
+.card_design:hover img{
+    transform: scale(1.1);
+      
+}
+.discount {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #616161;
+    color: #e9e9e9;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+
+
+/* update product */
+
+.lbt{
+   
+    background-color: #f1f1f1;
+}
+.lbt h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #656565;
+    margin-bottom: 3rem;  
+    text-align: center;
+    position: relative;
+}
+.lbt h1::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 6px;
+    background-color: #0b41c9;
+    border-radius: 1rem;
+    top: 3rem;
+    left: 0;
+}
+.cardd{
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+padding: 0.5rem;
+display: flex;
+gap: 1rem;
+ flex-shrink: 0; 
+}
+.cardd img{
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.clikimg img.active {
+    border: 2px solid #007bff;
+}

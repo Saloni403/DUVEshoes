@@ -18,6 +18,26 @@ ul{
     padding-left: 0;
     margin-bottom: 0;
 }
+.icons{
+  position: fixed;
+  right: -120px;
+  top: 50%;
+}
+.icons div{
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.icons div p{
+  margin-bottom: 0;
+  margin-left: 0.75rem;
+  /* font-size: 1.5rem; */
+}
 .sessions{
     margin: 50px 0;
 }
@@ -42,7 +62,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
+    padding-bottom: 1rem;
 
 }
 .contentatcenter  ul{
@@ -67,7 +87,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: end;
-      padding: 10px 0;
+      /* padding: 10px ; */
 }
 .navbar{
     padding-bottom: 0;
@@ -80,16 +100,18 @@ header{
     position: fixed;
     top: -950px;
    width: 100%;
+   height: 50vh;
     background-color: #ffffff;
     z-index: 999;
     transition: 0.3s ease;
+     overflow: scroll !important;
 }
 .hidden-menu{
    position: fixed;
 top: 0px;
     right: -350px;
    
-   width: 350px;
+   width: 300px;
     background-color: #ffffff;
     z-index: 999;
     transition: 0.3s ease;
@@ -151,6 +173,41 @@ border-radius: 10px;
     top: 0px;
 
 }
+    .background-section {
+      position: relative;
+      height: 100vh;
+      background: url(../images/herobanner.jpg) no-repeat center center fixed;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    .overlay-content {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      border-radius: 10px;
+    }
+
+    .overlay-content h4 {
+      font-size: 5vmin;
+    }
+
+    .overlay-content h2 {
+      font-size: 12vmin;
+    }
+
+    @media(max-width:952px) {
+      .background-section {
+        height: 60vh;
+      }
+    }
 /*  */
 @media(max-width:992px){
     .contentatstart, .contentbetween .navbar, .contentatcenter{
@@ -163,11 +220,12 @@ border-radius: 10px;
    }
 }
 
+
 /* product card */
 .releted h1 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     font-weight: 500;
-    color: #797979;
+    /* color: #797979; */
     margin-bottom: 1rem;
 }
 .card_design, .card_design2 {
