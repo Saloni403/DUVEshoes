@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <title>Document</title>
   <link rel="stylesheet" href="web/css/style.css" />
-  
+
 </head>
 
 <body>
+
+
   <!-- top -->
   <section class="topslider">
     <div class="container">
@@ -105,15 +107,16 @@
             </div>
           </nav>
           <div>
-            <i class="fa-solid fa-user mx-1"></i>
-            <i class="fa-solid fa-heart mx-1"></i>
-            <i class="fa-solid fa-bag-shopping mx-1"></i>
+            <a href=""><i class="fa-solid fa-user mx-1"></i></a>
+            <a href=""><i class="fa-solid fa-heart mx-1"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping mx-1"></i></a>
           </div>
         </div>
         <div class="col-12">
           <div class="row">
             <div class="col-sm-2 col-4 pb-3">
-              <img src="web/images/logo (5) (1).jpg" class="img-fluid border border-dark rounded"  alt="" />
+              <a href="index.html"><img src="web/images/logo (5) (1).jpg" class="img-fluid border border-dark rounded"
+                  alt="" /></a>
             </div>
             <div class="col-10 contentatcenter">
               <ul>
@@ -123,7 +126,8 @@
                 <li><a href="shoes.html">KIDS</a></li>
                 <li><a href="shoes.html">SPORTS & LIFESTYLE</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="">BLOGS</a></li>
+                <li><a href="blog.html">BLOGS</a></li>
+                <!-- <li><a href="">CONTACT US</a></li> -->
               </ul>
             </div>
             <div class="col d-lg-none d-flex align-items-center justify-content-end">
@@ -137,7 +141,8 @@
   <!-- hidden menu -->
   <section class="hidden-menu">
     <div class="container">
-      <i class="fa-solid fa-xmark border border-dark rounded p-3 my-3" style="font-size: 20px;" id="hiddenmenuclosing"></i>
+      <i class="fa-solid fa-xmark border border-dark rounded p-3 my-3" style="font-size: 20px;"
+        id="hiddenmenuclosing"></i>
       <form class="d-flex my-3" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-dark" type="submit">
@@ -155,7 +160,8 @@
         <li><a href="shoes.html">KIDS</a></li>
         <li><a href="shoes.html">SPORTS & LIFESTYLE</a></li>
         <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="">BLOGS</a></li>
+        <li><a href="blog.html">BLOGS</a></li>
+        <!-- <li><a href="">CONTACT US</a></li> -->
       </ul>
     </div>
   </section>
@@ -173,18 +179,19 @@
   </section>
 
   <!-- icons -->
-   <div class="icons">
-    <div><i class="fa-brands fa-whatsapp pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
-    <p>Whatsapp Now</p>  
+  <div class="icons">
+    <div class="we1"><i class="fa-brands fa-whatsapp pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+      <a href="//api.whatsapp.com/send?phone=919355368123" target="_blank" title="Share on whatsapp"
+        class="text-white">Whatsapp Now</a>
     </div>
-      <div>
+    <!-- <div class="we2">
     <i class="fa-solid fa-comment pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
   <p>Enquiry Now</p>
-</div>
-    <div><i class="fa-solid fa-envelope pe-3"  style="color: #ffffff; font-size: 7vmin;"></i>
-    <p>Mail Now</p>
+</div> -->
+    <div class="we2"><i class="fa-solid fa-envelope pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+      <a href="mailto:contact@duveworld.com" class="text-white">Mail Now</a>
     </div>
-   </div>
+  </div>
   <!-- Banner -->
   <section class="bannerimg">
     <div class="contentdiv">
@@ -195,7 +202,8 @@
             <p>
               Where comfort meets character. Step into shoes that feel like you — because they were made for you.
             </p>
-            <a href="" class="btn text-white btn-dark" style="background-color: #000000; ">Explore Collection</a>
+            <a href="shoes.html" class="btn text-white btn-dark" style="background-color: #000000; ">Explore
+              Collection</a>
           </div>
         </div>
       </div>
@@ -287,7 +295,7 @@
         <div class="col-md-6 centercontentheading">
 
           <h4>Grid of lifestyle shots + real people wearing Duve.</h4>
-          <a href="contact.html" class="btn btn-dark ">Follow Us on Instagram</a>
+          <a href="" class="btn btn-dark ">Follow Us on Instagram</a>
 
         </div>
         <div class="col-md-6 p-3">
@@ -306,38 +314,56 @@
           <div class=" d-md-flex align-items-center justify-content-between ">
             <h4>BLOGS</h4>
             <div>
-              <a href="" class="btn btn-dark">See All</a>
+              <a href="blog.html" class="btn btn-dark">See All</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class=" mb-lg-0 mb-5 card_design2">
-            <img class="img-fluid" src="web/images/SI1.jpg" alt="">
-            <h2>Leather Shoes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod doloribus fugiat labore et eligendi ipsum
-              numquam voluptatem modi dicta.</p>
-            <a href="" class="btn btn-dark ">Read More</a>
+        <div class="col-md-4 col-sm-6 ">
+          <div class="mb-5 blog">
+            <img src="web/images/blogimg1.jpg" class="img-fluid mb-3" alt="">
+            <p> adipisicing elit. Quo a recusandae aliquam nulla consequuntur illum accusantium doloribus vel minima
+              rem.</p>
+            <div class="date">
+              <p>May 30, 2025</p>
+              <p>11:46</p>
+            </div>
+            <div class="self">
+              <img src="web/images/dummypeople.jpg" class="img-fluid" alt="">
+              <p>BY <b>KOMAL BANSAL</b></p>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class=" mb-lg-0 mb-5 card_design2">
-            <img class="img-fluid" src="web/images/SI1.jpg" alt="">
-            <h2>Leather Shoes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod doloribus fugiat labore et eligendi ipsum
-              numquam voluptatem modi dicta.</p>
-            <a href="" class="btn btn-dark ">Read More</a>
+        <div class="col-md-4 col-sm-6 ">
+          <div class="mb-5 blog">
+            <img src="web/images/blogimg1.jpg" class="img-fluid mb-3" alt="">
+            <p> adipisicing elit. Quo a recusandae aliquam nulla consequuntur illum accusantium doloribus vel minima
+              rem.</p>
+            <div class="date">
+              <p>May 30, 2025</p>
+              <p>11:46</p>
+            </div>
+            <div class="self">
+              <img src="web/images/dummypeople.jpg" class="img-fluid" alt="">
+              <p>BY <b>KOMAL BANSAL</b></p>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 ">
-          <div class=" mb-lg-0 card_design2">
-            <img class="img-fluid" src="web/images/SI1.jpg" alt="">
-            <h2>Leather Shoes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod doloribus fugiat labore et eligendi ipsum
-              numquam voluptatem modi dicta.</p>
-            <a href="" class="btn btn-dark ">Read More</a>
+        <div class="col-md-4 col-sm-6 ">
+          <div class="mb-5 blog">
+            <img src="web/images/blogimg1.jpg" class="img-fluid mb-3" alt="">
+            <p> adipisicing elit. Quo a recusandae aliquam nulla consequuntur illum accusantium doloribus vel minima
+              rem.</p>
+            <div class="date">
+              <p>May 30, 2025</p>
+              <p>11:46</p>
+            </div>
+            <div class="self">
+              <img src="web/images/dummypeople.jpg" class="img-fluid" alt="">
+              <p>BY <b>KOMAL BANSAL</b></p>
+            </div>
           </div>
         </div>
 
@@ -352,8 +378,8 @@
           <div class=" d-md-flex align-items-center justify-content-between ">
             <h4>STEP INTO YOUR NEXT FAVORITE PAIR.</h4>
             <div>
-              <a href="" class="btn btn-dark">Filter</a>
-              <a href="" class="btn btn-dark">See All</a>
+              <a href="" class="btn btn-dark" onclick="filterMenu()" >Filter</a>
+              <a href="shoes.html" class="btn btn-dark">See All</a>
             </div>
           </div>
         </div>
@@ -369,42 +395,42 @@
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
               <div class="card-item swiper-slide">
                 <img src="web/images/SI1.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
               <div class="card-item swiper-slide">
                 <img src="web/images/SI1.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
               <div class="card-item swiper-slide">
                 <img src="web/images/SI1.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
               <div class="card-item swiper-slide">
                 <img src="web/images/SI1.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
               <div class="card-item swiper-slide">
                 <img src="web/images/SI1.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Sports Shoes</h2>
                 <p class="user-profession">Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
                   remembered.</p>
-                <button class="message-button">BUY NOW</button>
+                <a href="product.html"><button class="message-button">BUY NOW</button></a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -469,6 +495,16 @@
     <div class="container">
       <h1>Best Selling Products</h1>
       <div class="row">
+        <div class="col-12 my-3">
+          <div class=" d-md-flex align-items-center justify-content-between ">
+            <h4>Most Comfortable Products</h4>
+            <div>
+              <a href="" class="btn btn-dark" id="filterbtn">Filter</a>
+              <a href="shoes.html" class="btn btn-dark">See All</a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3 col-sm-6">
           <div class="card_design mb-5 " onclick="location.href='product.html'">
             <div class="img_name">
@@ -476,8 +512,8 @@
               <h2>Daily Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹400.00</div>
@@ -493,8 +529,8 @@
               <h2>Party Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹500.00</div>
@@ -510,8 +546,8 @@
               <h2>Rock Climbing</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹250.00</div>
@@ -528,7 +564,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹653.00</div>
@@ -545,7 +581,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹400.00</div>
@@ -561,8 +597,8 @@
               <h2>Party Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹500.00</div>
@@ -578,8 +614,8 @@
               <h2>Rock Climbing</h2>
             </div>
             <p>
-            Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹250.00</div>
@@ -596,7 +632,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹653.00</div>
@@ -608,6 +644,100 @@
       </div>
     </div>
 
+  </section>
+  <!-- reviews -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <h2>REVIEW BY OUR VALUABLE CUSTOMERS</h2>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+            consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6  mb-5">
+          <img class="img-fluid" src="web/images/SI1.jpg" alt="">
+          <img class="w-25 my-2" src="web/images/starimg-removebg-preview.png" alt="">
+          <h6>Ankit Sharma</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, consequatur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ's -->
+  <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-3">
+          <h4>Got Questions? We’ve Got You.</h4>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="bg-light mb-5 p-3 ">
+            <p>Ques: What sizes do you offer?</p>
+            <p>Ans: Duve shoes currently run from size [X to Y]. Use our size guide to find your best fit.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="bg-light mb-5 p-3 ">
+            <p>Ques: What’s your return policy?</p>
+            <p>Ans: We offer easy 7-day returns for unworn shoes in original condition.</p>
+            <a href="">Learn more here</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="bg-light mb-5 p-3 ">
+            <p>Ques: Are Duve shoes washable?</p>
+            <p>Ans: Yes! Most of our shoes are machine-washable. See care instructions on the product page.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="bg-light mb-5 p-3 ">
+            <p>Ques: Where do you ship?</p>
+            <p>Ans: All over India! International shipping coming soon.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="bg-light mb-5 p-3 ">
+            <p>Ques: Do you offer exchanges?</p>
+            <p>Ans: Yes — you can request a size exchange within 7 days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- upper footer or features -->
   <section class="sessions">
@@ -649,8 +779,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center p-sm-2">
-          <i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
-          <span>Back To Top</span>
+          <a href="index.html"><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+            <span class="text-white">Back To Top</span></a>
         </div>
       </div>
     </div>
@@ -668,7 +798,7 @@
         <div class="col-lg-3 col-sm-6 p-2">
           <h4>Customer Support</h4>
           <ul>
-            <li><a href="">Email Us</a></li>
+            <li><a href="mailto:contact@duveworld.com">Email Us</a></li>
             <li><a href="">Order Status</a></li>
             <li><a href="">Returns & Exchanges</a></li>
             <li><a href="">Store Finder</a></li>
@@ -689,12 +819,11 @@
         <div class="col-lg-3 col-sm-6 p-2">
           <h4>Our Products</h4>
           <ul>
-            <li><a href="">Shoes</a></li>
-            <li><a href="">Men</a></li>
-            <li><a href="">Women</a></li>
-            <li><a href="">Kids</a></li>
-            <li><a href="">Sports & Lifestyle</a></li>
-            <li><a href="">Outlet</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="shoes.html">Men</a></li>
+            <li><a href="shoes.html">Women</a></li>
+            <li><a href="shoes.html">Kids</a></li>
+            <li><a href="shoes.html">Sports & Lifestyle</a></li>
           </ul>
         </div>
       </div>

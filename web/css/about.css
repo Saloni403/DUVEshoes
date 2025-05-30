@@ -1,0 +1,23 @@
+.maindiv{
+    background-image: url(../images/bgimage.webp) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vmin;
+}
+.uppercontent, .uppercontent a{
+   color: aliceblue;
+  text-align: center;
+}
+.bgdiv{
+    background-color: rgba(0, 0, 0,0.8);
+    height: 80vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:576px){
+    .maindiv,.bgdiv{
+    height: 80vmax;
+}
+}

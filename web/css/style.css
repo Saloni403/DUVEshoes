@@ -18,14 +18,10 @@ ul{
     padding-left: 0;
     margin-bottom: 0;
 }
-.icons{
-  position: fixed;
-  right: -120px;
-  top: 50%;
-}
+
 .icons div{
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   display: flex;
   align-items: center;
   background-color: #000;
@@ -33,10 +29,33 @@ ul{
   border-radius: 10px 0px 0px 10px;
 }
 
-.icons div p{
+.icons div a{
   margin-bottom: 0;
-  /* margin-left: 0.75rem; */
-  /* font-size: 1.5rem; */
+  
+}
+.we1{
+  position: fixed;
+  right: -135px;
+  top: 50%;
+  transition: 0.3s ease;
+  z-index: 99;
+}
+.we2{
+  position: fixed;
+  right: -90px;
+top: 60%;
+  transition: 0.3s ease;
+  z-index: 99;
+}
+/* .we3{
+  position: fixed;
+  right: -90px;
+top: 70%;
+  transition: 0.3s ease;
+  z-index: 99;
+} */
+.icons div:hover{
+right: 0;
 }
 .sessions{
     margin: 50px 0;
@@ -167,11 +186,13 @@ border-radius: 10px;
 }
 /* filter */
 .filtermenu{
-
     position: fixed;
-    right: -350px;
-    top: 0px;
-
+   left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: #fff;
+display: none;
 }
     .background-section {
       position: relative;
@@ -218,8 +239,40 @@ border-radius: 10px;
    .centerdiv{
     text-align: center;
    }
+   .we1{
+    top: 50%;
+   }
+   .we2{
+    top: 57%;
+   }
+   /* .we3{
+    top: 64%;
+   } */
 }
 
+
+
+/* blog css */
+
+.date{
+    display: flex;
+   font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+.self{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.self img{
+    width: 50px;
+    border-radius: 50%;
+}
+ .blog{
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 /* product card */
 .releted h1 {

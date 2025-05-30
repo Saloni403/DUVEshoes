@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -12,48 +13,225 @@
   <link rel="stylesheet" href="web/css/style.css" />
   <link rel="stylesheet" href="web/css/shoes.css">
 </head>
-<body>
-    <!-- categories  -->
-     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 my-3">
-                    <a href="index.html" class="btn btn-dark"><i class="fa-solid fa-arrow-left-long" style="color: #ffffff;"></i> Back</a>
-                </div>
-                <div class="col-12 my-sm-3">
-                    <h1>Shoes for Men, Women & Kids</h1>
-                </div>
-                <div class="col-12 bg-light" >
-                    <div class="row my-lg-5">
-                        <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5 ">
-                            <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
-                            <p class="fw-bold mb-0">ORIGINALS</p>
-                        </div>
-                        <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
-                            <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
-                            <p class="fw-bold mb-0">SPORTSWEAR</p>
-                        </div>
-                        <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
-                            <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
-                            <p class="fw-bold mb-0">RUNNING</p>
-                        </div>
-                        <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
-                            <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
-                            <p class="fw-bold mb-0">OTHER SPORTS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
 
-     <!-- productes list upper-->
-      
+<body>
+
+  <!-- top -->
+  <section class="topslider">
+    <div class="container">
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="text-center  py-2">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <span>FREE DELIVERY, RETURN & EXCHANGE</span>
+              <i class="fa-solid fa-angle-down" onclick="showMenu()" style="color: #ffffff"></i>
+            </div>
+            <div class="carousel-item">
+              <span>EXTRA 5% OFF ON PREPAID ORDERS</span>
+              <i class="fa-solid fa-angle-down" onclick="showMenu()" style="color: #ffffff"></i>
+            </div>
+            <div class="carousel-item">
+              <span>SIGN UP & GET 10% OFF</span>
+              <i class="fa-solid fa-angle-down" onclick="showMenu()" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mobile view top -->
+  <section class="hiddentop">
+    <div class="container">
+      <div class="row">
+        <div class="col-12  py-3">
+          <div class="text-end">
+            <i class="fa-solid fa-xmark border border-dark rounded p-3" id="hiddentop-closing"
+              style="font-size: 20px;"></i>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 mb-md-0 mb-3">
+          <h5 style="font-weight: bold;">SIGN UP & GET 10% OFF</h5>
+          <p class="py-2">
+            Members get more! Like a 10% discount voucher, early access to the
+            sale and access to limited edition products. Sign up now!
+          </p>
+          <a href="" class="btn btn-dark">Learn More</a>
+        </div>
+        <div class="col-md-4 py-3 mb-md-0 mb-3">
+          <h5 style="font-weight: bold;">FREE DELIVERY, RETURN & EXCHANGE</h5>
+          <p class="py-2">
+            Spend over Rs1000/- and your delivery is FREE! For all orders,
+            Return & Exchange is offered for free. Delivery times for Delhi,
+            Gurgaon: 1-2 Days, Metro Cities: 2-3 Days Others: 3-5 Days.
+          </p>
+          <ul>
+            <li><a href="">READ MORE ON DELIVERY</a></li>
+            <li><a href="">READ MORE ON RETURN</a></li>
+            <li><a href="">READ MORE ON EXCHANGE</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 py-3 mb-md-0 mb-3">
+          <h5 style="font-weight: bold;">EXTRA 5% OFF ON PREPAID ORDERS</h5>
+          <p class="">
+            Save 5% Extra on prepaid payments for all orders under Rs 5000/-
+          </p>
+          <p>Easy Payments from UPI, Credit Card, and Net-banking</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 contentatstart">
+          <ul>
+            <li><a href="">Help</a></li>
+            <li><a href="product.html">Order and Return</a></li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 contentbetween">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-dark" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+          <div>
+            <a href=""><i class="fa-solid fa-user mx-1"></i></a>
+            <a href=""><i class="fa-solid fa-heart mx-1"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping mx-1"></i></a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-sm-2 col-4 pb-3">
+              <a href="index.html"><img src="web/images/logo (5) (1).jpg" class="img-fluid border border-dark rounded"
+                  alt="" /></a>
+            </div>
+            <div class="col-10 contentatcenter">
+              <ul>
+                <li><a href="shoes.html">SHOES</a></li>
+                <li><a href="shoes.html">MEN</a></li>
+                <li><a href="shoes.html">WOMEN</a></li>
+                <li><a href="shoes.html">KIDS</a></li>
+                <li><a href="shoes.html">SPORTS & LIFESTYLE</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="blog.html">BLOGS</a></li>
+                <!-- <li><a href="">CONTACT US</a></li> -->
+              </ul>
+            </div>
+            <div class="col d-lg-none d-flex align-items-center justify-content-end">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- hidden menu -->
+  <section class="hidden-menu">
+    <div class="container">
+      <i class="fa-solid fa-xmark border border-dark rounded p-3 my-3" style="font-size: 20px;"
+        id="hiddenmenuclosing"></i>
+      <form class="d-flex my-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-dark" type="submit">
+          Search
+        </button>
+      </form>
+      <ul class="my-3 hiddenmenuitem">
+        <li><a href="">Help</a></li>
+        <li><a href="">Order and Return</a></li>
+        <li><a href="">Sign up</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="shoes.html">SHOES</a></li>
+        <li><a href="shoes.html">MEN</a></li>
+        <li><a href="shoes.html">WOMEN</a></li>
+        <li><a href="shoes.html">KIDS</a></li>
+        <li><a href="shoes.html">SPORTS & LIFESTYLE</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="blog.html">BLOGS</a></li>
+        <!-- <li><a href="">CONTACT US</a></li> -->
+      </ul>
+    </div>
+  </section>
+  <!-- header bottom -->
+  <section class="headerbottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center  py-2">
+          <span>Buy 2, Save an extra 20%! Exclusive Offer on Curated Picks this
+            Month!</span>
+          <i class="fa-solid fa-arrow-right-long" style="color: #ffffff"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- icons -->
+  <div class="icons">
+    <div class="we1"><i class="fa-brands fa-whatsapp pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+      <a href="//api.whatsapp.com/send?phone=919355368123" target="_blank" title="Share on whatsapp"
+        class="text-white">Whatsapp Now</a>
+    </div>
+    <!-- <div class="we2">
+    <i class="fa-solid fa-comment pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+  <p>Enquiry Now</p>
+</div> -->
+    <div class="we2"><i class="fa-solid fa-envelope pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+      <a href="mailto:contact@duveworld.com" class="text-white">Mail Now</a>
+    </div>
+  </div>
+
+  <!-- categories  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-3">
+          <a href="index.html" class="btn btn-dark"><i class="fa-solid fa-arrow-left-long" style="color: #ffffff;"></i>
+            Back</a>
+        </div>
+        <div class="col-12 my-sm-3">
+          <h1>Shoes for Men, Women & Kids</h1>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="row my-lg-5">
+            <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5 ">
+              <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
+              <p class="fw-bold mb-0">ORIGINALS</p>
+            </div>
+            <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
+              <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
+              <p class="fw-bold mb-0">SPORTSWEAR</p>
+            </div>
+            <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
+              <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
+              <p class="fw-bold mb-0">RUNNING</p>
+            </div>
+            <div class="col-lg-2 col-sm-6 mb-lg-0 mb-5">
+              <img src="web/images/SI1.jpg" class="img-fluid my-2" alt="">
+              <p class="fw-bold mb-0">OTHER SPORTS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- productes list upper-->
+
   <section class="releted mt-lg-5">
 
     <div class="container">
       <div class="row">
-         <div class="col-12 my-3">
+        <div class="col-12 my-3">
           <div class=" d-md-flex align-items-center justify-content-between ">
             <h4>STEP INTO YOUR NEXT FAVORITE PAIR.</h4>
             <div>
@@ -69,8 +247,8 @@
               <h2>Daily Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹400.00</div>
@@ -86,8 +264,8 @@
               <h2>Party Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹500.00</div>
@@ -103,8 +281,8 @@
               <h2>Rock Climbing</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹250.00</div>
@@ -121,7 +299,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹653.00</div>
@@ -138,7 +316,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹400.00</div>
@@ -154,8 +332,8 @@
               <h2>Party Wear</h2>
             </div>
             <p>
-             Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹500.00</div>
@@ -171,8 +349,8 @@
               <h2>Rock Climbing</h2>
             </div>
             <p>
-            Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹250.00</div>
@@ -189,7 +367,7 @@
             </div>
             <p>
               Carefully crafted. Comfort guaranteed. Designed to be worn, lived in, and
-                  remembered.
+              remembered.
             </p>
             <div class="btnn">
               <div class="rate">₹653.00</div>
@@ -202,12 +380,88 @@
     </div>
 
   </section>
-     
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+
+  <!-- footer -->
+  <section class="footertop">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center p-sm-2">
+          <a href="index.html"><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+            <span class="text-white">Back To Top</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="my-sm-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 p-2 centerdiv">
+          <img src="web/images/logo (5) (1).jpg" class="border border-dark rounded w-50 mb-2" alt="" />
+          <li><a href="">🌱 Eco-friendly</a></li>
+          <li><a href="">🧼 Washable</a></li>
+          <li><a href="">🏃 All-Day Comfort</a></li>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-2">
+          <h4>Customer Support</h4>
+          <ul>
+            <li><a href="mailto:contact@duveworld.com">Email Us</a></li>
+            <li><a href="">Order Status</a></li>
+            <li><a href="">Returns & Exchanges</a></li>
+            <li><a href="">Store Finder</a></li>
+            <li><a href="">Customer Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-2">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="">Log In</a></li>
+            <li><a href="">Create an Account</a></li>
+            <li><a href="">My Orders</a></li>
+            <li><a href="">DUVE VIP</a></li>
+            <li><a href="">DUVE Rewards</a></li>
+            <li><a href="">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-2">
+          <h4>Our Products</h4>
+          <ul>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="shoes.html">Men</a></li>
+            <li><a href="shoes.html">Women</a></li>
+            <li><a href="shoes.html">Kids</a></li>
+            <li><a href="shoes.html">Sports & Lifestyle</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section style="background-color: black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="https://tssgtech.com/" target="_blank">
+            <p style="
+                  text-align: center;
+                  padding: 10px;
+                  margin: 0;
+                  color: white;
+                ">
+              Copyright Tssg-Tech pvt.ltd © 2025 All Rights Reserved
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
- 
+
   <script src="web/js/script.js"></script>
 </body>
+
 </html>
