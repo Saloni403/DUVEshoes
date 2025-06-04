@@ -26,7 +26,7 @@ const signup = (e) => {
   e.preventDefault();
   signupcontainer.style.zIndex = "99"; 
   signupcontainer.style.left = "50%";
-   logincontainer.style.left = "-50%";
+  logincontainer.style.left = "-50%";
 }
 closingsignupform.addEventListener("click", function () {
   signupcontainer.style.left = "-50%";

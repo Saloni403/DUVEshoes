@@ -75,7 +75,7 @@ header{
   top: 0;
   background-color: rgb(0, 0, 0);
   /* backdrop-filter: blur(10px); */
-  z-index: 99;
+  z-index: 999;
   
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -93,7 +93,7 @@ header.blurred {
 
  .contentatcenter ul li a{
    padding: 5px 10px;
-   
+   margin-right: 1rem;
 }
 
 .contentatcenter ul li a:hover{
@@ -355,7 +355,8 @@ border-radius: 10px;
     cursor: pointer;
 }
 .add:hover{
-        background: rgb(115, 63, 11);
+       background-color:rgb(25, 17, 17) ;
+       color: #FFFFFF;
 
 }
 .addd{
@@ -418,7 +419,7 @@ main#carousel {
   --items: 5;
   --middle: 3;
   --position: 1;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 div.item {

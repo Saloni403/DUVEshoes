@@ -20,61 +20,73 @@
   
    <!-- header -->
   <header>
-    <div class="container">
-      <div class="row">
-       
-       
-        <div class="col-12">
-          <div class="row d-flex align-items-center justify-content-between py-3">
-            <div class="col-sm-2 col-4 ">
-              <a href="index.html"><img src="web/images/logo__5___1_-removebg-preview.png" class="img-fluid rounded"
-                  alt="" /></a>
-            </div>
-            <div class="col-lg-8  contentatcenter">
-              <ul>
-                <li><a href="shoes.html">SHOES</a></li>
-                <li><a href="shoes.html">MEN</a></li>
-                <li><a href="shoes.html">WOMEN</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="">HELP</a></li>
-                <li><a href="">LOGIN</a></li>
-              </ul>
-            </div>
-            <!-- <div class="col-4 d-lg-none d-flex align-items-center justify-content-end text-white">
-              <i class="fa-solid fa-bars-staggered"></i>
-            </div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="row d-flex align-items-center justify-content-between py-3"
+            >
+              <div class="col-sm-2 col-4">
+                <a href="index.html"
+                  ><img
+                    src="web/images/logo__5___1_-removebg-preview.png"
+                    class="img-fluid rounded"
+                    alt=""
+                /></a>
+              </div>
+              <div class="col-lg-8 contentatcenter">
+                <ul>
+                  <li><a href="shoes.html">SHOES</a></li>
+                  <li><a href="shoes.html">MEN</a></li>
+                  <li><a href="shoes.html">WOMEN</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
+                  <!-- <li><a href="">HELP</a></li> -->
+                  <li><a href="#" onclick="login(event)">LOGIN</a></li>
+                </ul>
+              </div>
+              
 
-             <div class="col-lg-2 col-sm-10 col-8 ">
-              <div class="d-flex align-items-center justify-content-lg-end justify-content-between">
-          <div>
-            <a href=""><i class="fa-solid fa-user mx-1"></i></a>
-            <a href=""><i class="fa-solid fa-heart mx-1"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping mx-1"></i></a>
-          </div>
-          <i class="fa-solid fa-bars-staggered d-lg-none text-white mx-1"></i>
-        </div>
+              <div class="col-lg-2 col-sm-10 col-8">
+                <div
+                  class="d-flex align-items-center justify-content-lg-end justify-content-between"
+                >
+                  <div>
+                    <a href=""><i class="fa-solid fa-user mx-1"></i></a>
+                    <!-- <a href=""><i class="fa-solid fa-heart mx-1"></i></a> -->
+                    <a href="cart.html"
+                      ><i class="fa-solid fa-bag-shopping mx-1"></i
+                    ></a>
+                  </div>
+                  <i
+                    class="fa-solid fa-bars-staggered d-lg-none text-white mx-1"
+                  ></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
   <!-- hidden menu -->
-  <section class="hidden-menu d-lg-none">
-    <div class="container pt-3">
-      <i class="fa-solid fa-xmark text-white" style="font-size: 2rem;"
-        id="hiddenmenuclosing"></i>
-     
-      <ul class="my-3 hiddenmenuitem">
-       <li><a href="shoes.html">SHOES</a></li>
-                <li><a href="shoes.html">MEN</a></li>
-                <li><a href="shoes.html">WOMEN</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="">HELP</a></li>
-                <li><a href="">LOGIN</a></li>
-      </ul>
-    </div>
-  </section>
+   <section class="hidden-menu d-lg-none">
+      <div class="container pt-3">
+        <i
+          class="fa-solid fa-xmark text-white"
+          style="font-size: 2rem"
+          id="hiddenmenuclosing"
+        ></i>
+
+        <ul class="my-3 hiddenmenuitem">
+          <li><a href="shoes.html">SHOES</a></li>
+          <li><a href="shoes.html">MEN</a></li>
+          <li><a href="shoes.html">WOMEN</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <!-- <li><a href="">HELP</a></li> -->
+          <!-- <li><a href="#" class="loginbtn">LOGIN</a></li> -->
+          <li><a href="#" onclick="login(event)">LOGIN</a></li>
+        </ul>
+      </div>
+    </section>
   <!-- header bottom -->
   <section class="headerbottom">
     <div class="container">
@@ -175,14 +187,16 @@
 
     <!-- footer -->
     <section class="footertop">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center p-sm-2">
-                    <a href="" id="scrollToTop"><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
-                        <span class="text-white">Back To Top</span></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center p-sm-2">
+            <a href="" id="scrollToTop"
+              ><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+              <span class="text-white">Back To Top</span></a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="py-sm-3">
@@ -247,6 +261,103 @@
             </div>
         </div>
     </section>
+
+ <!-- login form -->
+    <section>
+      <div class="login-container">
+        <i class="fa-solid fa-xmark closingloginform"></i>
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              style="
+                background-color: #000000;
+                color: #ffffff;
+                padding: 0.5rem 1rem;
+              "
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="form-footer">
+          <p>
+            Don't have an account?
+            <a href="" onclick="signup(event)">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sign up form -->
+    <section>
+      <div class="signup-container">
+        <i class="fa-solid fa-xmark closingsignupform"></i>
+        <h2>Sign up</h2>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" required />
+          </div>
+          <div class="form-group">
+            <label for="pno">Phone No: </label>
+            <input
+              type="tel"
+              id="pno"
+              name="pno"
+              placeholder="enter your number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="password"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              style="
+                background-color: #000000;
+                color: #ffffff;
+                padding: 0.5rem 1rem;
+              "
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="form-footer">
+          <p>
+            click here to login Now, <a href="" onclick="login(event)">Login</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
