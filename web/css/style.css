@@ -602,3 +602,48 @@ main#carousel{
     display: none;
   }
 }
+
+/* login form */
+
+.login-container, .signup-container{
+  position: fixed;
+  top: calc(50% - 100px);
+  transform: translateY(-50%);
+  left: -50%;
+ transform: translateX(-50%);
+  max-width: 400px;
+  padding: 2rem;
+  background-color: rgba(3, 3, 3, 0.8);
+  backdrop-filter: blur(20px);
+  color: #fff;
+  border-radius: 10px;
+  z-index: 999;
+}
+.login-container h2, .signup-container h2{
+  text-align: center;
+  background: #000;
+  color: #ffffff;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+.form-group{
+   margin: 1rem 0;
+}
+.form-group button:hover{
+  background-color:rgb(25, 17, 17) !important;
+}
+@media(max-width:562px){
+.login-container{
+ top: 25%;
+ width: 300px;
+}
+ .signup-container{
+   top: 10%;
+   width: 300px;
+ }
+.form-group input{
+  width: 100%;
+}
+}
+
+
