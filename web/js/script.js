@@ -3,33 +3,37 @@ let fa_bars_staggered = document.querySelector(".fa-bars-staggered");
 let hidden_menu = document.querySelector(".hidden-menu");
 let hiddenmenuclosing = document.querySelector("#hiddenmenuclosing");
 
-let logincontainer = document.querySelector(".login-container");
+let innerlogincontainer = document.querySelector(".inner-login");
 let closingloginform = document.querySelector(".closingloginform");
+let logincontainer = document.querySelector(".login-container");
 
+let innersignupcontainer = document.querySelector(".inner-signup");
 let signupcontainer = document.querySelector(".signup-container");
 let closingsignupform = document.querySelector(".closingsignupform");
 
+
+
 const login = (e) => {
    e.preventDefault();
-  logincontainer.style.left = "50%";
+ signupcontainer.style.display="none";
   document.body.style.overflow = 'hidden';
-   hidden_menu.style.right = "-350px";
-    signupcontainer.style.left = "-50%";
+  logincontainer.style.display="flex";
 }
 closingloginform.addEventListener("click", function () {
-  logincontainer.style.left = "-50%";
+    logincontainer.style.display="none";
   document.body.style.overflow = '';
 })
 
 
+
+
 const signup = (e) => {
   e.preventDefault();
-  signupcontainer.style.zIndex = "99"; 
-  signupcontainer.style.left = "50%";
-  logincontainer.style.left = "-50%";
+ signupcontainer.style.display="flex";
+    logincontainer.style.display="none";
 }
 closingsignupform.addEventListener("click", function () {
-  signupcontainer.style.left = "-50%";
+ signupcontainer.style.display="none";
   document.body.style.overflow = '';
 })
 

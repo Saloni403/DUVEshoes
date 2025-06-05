@@ -257,6 +257,14 @@ border-radius: 10px;
 }
 
 /* product card */
+
+.star {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d9cf6e;
+    margin: 0.5rem 0;
+}
+
 .releted h1 {
     /* font-size: 2.5rem; */
     font-weight: 500;
@@ -606,20 +614,32 @@ main#carousel{
 
 /* login form */
 
+
 .login-container, .signup-container{
-  position: fixed;
-  top: calc(50% - 100px);
-  transform: translateY(-50%);
-  left: -50%;
- transform: translateX(-50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+background-color: rgba(0, 0, 0,0.1);
+backdrop-filter: blur(10px);
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+ z-index: 999;
+}
+
+ .inner-login, .inner-signup{
   max-width: 400px;
-  padding: 2rem;
   background-color: rgba(3, 3, 3, 0.8);
   backdrop-filter: blur(20px);
   color: #fff;
   border-radius: 10px;
   z-index: 999;
 }
+
 .login-container h2, .signup-container h2{
   text-align: center;
   background: #000;
@@ -630,20 +650,16 @@ main#carousel{
 .form-group{
    margin: 1rem 0;
 }
+.form-group input{
+  width: 100%;
+}
 .form-group button:hover{
   background-color:rgb(25, 17, 17) !important;
 }
 @media(max-width:562px){
-.login-container{
- top: 25%;
- width: 300px;
-}
- .signup-container{
-   top: 10%;
-   width: 300px;
- }
-.form-group input{
-  width: 100%;
+.inner-login, .inner-signup{
+  max-width: 300px;
+ padding: 1rem !important;
 }
 }
 
