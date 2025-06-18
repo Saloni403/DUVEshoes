@@ -11,7 +11,18 @@ let innersignupcontainer = document.querySelector(".inner-signup");
 let signupcontainer = document.querySelector(".signup-container");
 let closingsignupform = document.querySelector(".closingsignupform");
 
+function dec(){
+ let qty= document.querySelector(".qty");
+if(qty.innerText>0)
+ qty.innerText--;
 
+}
+
+function inc(){
+ let qty= document.querySelector(".qty");
+if(qty.innerText>=0)
+qty.innerText++;
+}
 
 const login = (e) => {
    e.preventDefault();
