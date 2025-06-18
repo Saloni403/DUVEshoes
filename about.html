@@ -2,140 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-    <link rel="stylesheet" href="web/css/style.css" />
-    <link rel="stylesheet" href="web/css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="web/css/style.css" />
+  <link rel="stylesheet" href="web/css/about.css">
 </head>
 
 <body>
 
-  
+
   <!-- header -->
   <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="row d-flex align-items-center justify-content-between py-3"
-            >
-              <div class="col-sm-2 col-4">
-                <a href="index.html"
-                  ><img
-                    src="web/images/logo__5___1_-removebg-preview.png"
-                    class="img-fluid rounded"
-                    alt=""
-                /></a>
-              </div>
-              <div class="col-lg-8 contentatcenter">
-                <ul>
-                  <li><a href="shoes.html">SHOES</a></li>
-                  <li><a href="shoes.html">MEN</a></li>
-                  <li><a href="shoes.html">WOMEN</a></li>
-                  <li><a href="about.html">ABOUT US</a></li>
-                  <!-- <li><a href="">HELP</a></li> -->
-                  <li><a href="#" onclick="login(event)">LOGIN</a></li>
-                </ul>
-              </div>
-              
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="row d-flex align-items-center justify-content-between py-3">
+            <div class="col-sm-2 col-6">
+              <a href="index.html"><img src="web/images/logo__5___1_-removebg-preview.png" class="w-75 rounded"
+                  alt="" /></a>
+            </div>
+            <div class="col-lg-8 contentatcenter">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shoes.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="#" onclick="login(event)">LOGIN</a></li>
+              </ul>
 
-              <div class="col-lg-2 col-sm-10 col-8">
-                <div
-                  class="d-flex align-items-center justify-content-lg-end justify-content-between"
-                >
-                  <div>
-                    <a href=""><i class="fa-solid fa-user mx-1"></i></a>
-                    <!-- <a href=""><i class="fa-solid fa-heart mx-1"></i></a> -->
-                    <a href="cart.html"
-                      ><i class="fa-solid fa-bag-shopping mx-1"></i
-                    ></a>
-                  </div>
-                  <i
-                    class="fa-solid fa-bars-staggered d-lg-none text-white mx-1"
-                  ></i>
+            </div>
+
+
+            <div class="col-2  ">
+              <div class=" d-flex justify-content-end align-items-center">
+                <div class="cart-icons">
+                  <a href=""><i class="fa-solid fa-user mx-1"></i></a>
+                  <a href="cart.html"><i class="fa-solid fa-bag-shopping mx-1"></i></a>
                 </div>
+                <i class="fa-solid fa-bars-staggered d-lg-none text-white mx-1" style="font-size: 25px;"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-  <!-- hidden menu -->
-   <section class="hidden-menu d-lg-none">
-      <div class="container pt-3">
-        <i
-          class="fa-solid fa-xmark text-white"
-          style="font-size: 2rem"
-          id="hiddenmenuclosing"
-        ></i>
+    </div>
+  </header>
+<!-- hidden menu -->
+  <section class="hidden-menu d-lg-none">
+    <div class="container pt-3">
+      <i class="fa-solid fa-xmark text-white" style="font-size: 2rem" id="hiddenmenuclosing"></i>
 
-        <ul class="my-3 hiddenmenuitem">
-          <li><a href="shoes.html">SHOES</a></li>
-          <li><a href="shoes.html">MEN</a></li>
-          <li><a href="shoes.html">WOMEN</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <!-- <li><a href="">HELP</a></li> -->
-          <!-- <li><a href="#" class="loginbtn">LOGIN</a></li> -->
-          <li><a href="#" onclick="login(event)">LOGIN</a></li>
-        </ul>
-      </div>
-    </section>
+      <ul class="my-3 hiddenmenuitem">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shoes.html">SHOP</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="#" onclick="login(event)">LOGIN</a></li>
+        <li><a href="cart.html">MY ORDERS <i class="fa-solid fa-bag-shopping mx-1"></i></a></li>
+        <li><a href="#">MY ACCOUNT <i class="fa-solid fa-user mx-1"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
   <!-- icons -->
- <div class="icons">
-    <div class="we1"><i class="fa-brands fa-whatsapp pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
+  <div class="icons">
+    <div class="we1">
+      <i class="fa-brands fa-whatsapp pe-3" style="color: #ffffff; font-size: 2.5rem"></i>
       <a href="//api.whatsapp.com/send?phone=919355368123" target="_blank" title="Share on whatsapp"
         class="text-white">Whatsapp Now</a>
     </div>
-    <!-- <div class="we2">
-    <i class="fa-solid fa-comment pe-3" style="color: #ffffff; font-size: 7vmin;"></i>
-  <p>Enquiry Now</p>
-</div> -->
-    <div class="we2"><i class="fa-solid fa-envelope pe-3" style="color: #ffffff; font-size: 6vmin;"></i>
+
+    <div class="we2">
+      <i class="fa-solid fa-envelope pe-3" style="color: #ffffff; font-size: 2.5rem"></i>
       <a href="mailto:contact@duveworld.com" class="text-white">Mail Now</a>
     </div>
   </div>
 
-    <!-- Lifestyle Banner -->
-    <section>
-        <div class="background-section">
-            <div class="overlay-content">
-                <h4>“You don’t wear Duve. You become it.”</h4>
-                <h2>Duve In Motion</h2>
+   <!-- Lifestyle Banner -->
+  <section class="">
+    <div class="background-section">
+      <div class="overlay-content">
+        <h4>“You don’t wear Duve. You become it.”</h4>
+        <h2>Duve In Motion</h2>
 
-                <a href="product.html" class="btn text-white btn-dark" style="background-color: #000000; ">SHOP NOW</a>
-            </div>
+        <a href="shoes.html" class="btn text-white btn-dark" style="background-color: #000000">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram stay with us -->
+  <section class="mt-5">
+    <div class="container">
+      <h1 class="text-center mb-3">Stay With Us</h1>
+      <div class="row flex-column-reverse flex-md-row">
+        <!-- <div class="col-12 p-3 pt-0 mt-md-0 mt-3" id="titleheading">
+          <h1>Stay With Us</h1>
+        </div> -->
+        <div class="col-md-6 mt-3 mt-md-0 centercontentheading">
+          <h4>Grid of lifestyle shots + real people wearing Duve.</h4>
+          <h4 class=" ">Why Duve?</h4>
+          <ul>
+            <li>✔ Made in India</li>
+            <li>✔ Softest cushioned soles</li>
+            <li>✔ Machine-washable & long-lasting</li>
+            <li>✔ Unisex, universal fit</li>
+            <li>✔ Eco-conscious materials</li>
+           
+          </ul>
+           <a href="" class="btn btn-dark mt-3" style="width: fit-content;">Follow Us on Instagram</a>
         </div>
-    </section>
-
-    <!-- Instagram stay with us -->
-    <section class="my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 p-3" id="titleheading">
-                    <h1>Stay With Us</h1>
-                </div>
-                <div class="col-md-6 centercontentheading">
-
-                    <h4>Grid of lifestyle shots + real people wearing Duve.</h4>
-                    <a href="contact.html" class="btn btn-dark ">Follow Us on Instagram</a>
-
-                </div>
-                <div class="col-md-6 p-3">
-                    <img class="img-fluid" src="web/images/herobanner.jpg" alt="" />
-                </div>
-            </div>
+        <div class="col-md-6 p-md-3">
+          <img class="img-fluid" style="border-radius: 100px 0 100px 0;" src="web/images/instalinkimg.png" alt="" />
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-
-    <!-- review section / Testimonial -->
-    <section class="review pt-5">
+  <!-- review section / Testimonial -->
+  <!-- <section class="review pt-5">
     <div class="container">
       <div class="row">
         <div class="col-12 mb-3">
@@ -192,39 +182,72 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <!-- More than a shoe. It’s another you.-->
+
+  <section class="sessions">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-md-3 d-flex align-items-center justify-content-center"
+       >
+          <img class="img-fluid "  style="border-radius: 0 100px 0 100px ;" src="web/images/shoesimage/AUBanner.jpg" alt="">
+        </div>
+        <div class="col-md-6 p-3 mt-3 mt-md-0 bg-light rounded d-flex justify-content-center flex-column ">
+          <h2>More than a shoe. It’s another you.</h2>
+          <p>Duve was born from a simple idea: What if shoes didn’t just fit your feet — they fit your life?
+          </p>
+          <p>We believe footwear should adapt to you, not the other way around. That’s why every pair of Duve
+            is designed for performance, but built around comfort and conscience.</p>
+          <p>Whether you’re catching a metro, heading to work, or finding peace in your walk — Duve walks with
+            you.</p>
+          <p>We’re proudly Indian, globally inspired, and fully committed to helping you move with meaning.
+          </p>
+
+
+          <p>“We didn’t start Duve to sell shoes. We started it to serve the people who wear them. Every step
+            should feel like a choice. Every pair should feel like another you.”
+          </p>
+          <h6 class="text-end">-By Founder</h6>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-    <!-- More than a shoe. It’s another you.-->
+  <section class="sessions">
+    <div class="container">
+      <div class="row flex-md-row flex-column-reverse ">
 
-    <section class="sessions">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 p-3 bg-dark d-flex align-items-center justify-content-center">
-                    <img class="img-fluid " src="web/images/logo__5___1_-removebg-preview.png" alt="">
-                </div>
-                <div class="col-lg-6 p-3 bg-light rounded d-flex justify-content-center flex-column ">
-                    <h2>More than a shoe. It’s another you.</h2>
-                    <p>Duve was born from a simple idea: What if shoes didn’t just fit your feet — they fit your life?
-                    </p>
-                    <p>We believe footwear should adapt to you, not the other way around. That’s why every pair of Duve
-                        is designed for performance, but built around comfort and conscience.</p>
-                    <p>Whether you’re catching a metro, heading to work, or finding peace in your walk — Duve walks with
-                        you.</p>
-                    <p>We’re proudly Indian, globally inspired, and fully committed to helping you move with meaning.
-                    </p>
+        <div class="col-md-6 p-3 mt-3 mt-md-0 bg-light rounded d-flex justify-content-center flex-column ">
+          <h2>Duve – Another You.</h2>
+          <p>Duve is not just another sneaker brand. We’re
+            made for the creators, the walkers, the wanderers –
+            anyone who chooses comfort without compromise.
+
+          </p>
+          <p>Every Duve sneaker is built with ultra-soft,
+            cloud-cushion soles, sustainable materials, and a
+            unisex design that reflects the real you.</p>
+          <p>Whether you're walking into college, a café, or your
+            dreams — Duve goes with you.
+          </p>
+          
 
 
-                    <p>“We didn’t start Duve to sell shoes. We started it to serve the people who wear them. Every step
-                        should feel like a choice. Every pair should feel like another you.”
-                    </p>
-                    <h6 class="text-end">-By Founder</h6>
-                </div>
 
-            </div>
         </div>
-    </section>
 
-    <!-- <section class=" sessions maindiv">
+        <div class="col-md-6 px-md-3 d-flex align-items-center justify-content-center"
+        >
+          <img class="img-fluid "  style="border-radius:  100px 0 100px 0;" src="web/images/shoesimage/AUBanner1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <!-- <section class=" sessions maindiv">
         <div class="bgdiv">
             <div class="container">
                 <div class="row ">
@@ -250,8 +273,8 @@
         </div>
     </section> -->
 
-    <!-- FAQ's -->
-    <!-- <section class="">
+  <!-- FAQ's -->
+  <!-- <section class="">
         <div class="container">
             <div class="row">
                 <div class="col-12 my-3">
@@ -294,87 +317,81 @@
         </div>
     </section> -->
 
-    <!-- footer -->
-    <section class="footertop">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center p-sm-2">
-            <a href="" id="scrollToTop"
-              ><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
-              <span class="text-white">Back To Top</span></a
-            >
-          </div>
+  <!-- footer -->
+ <section class="footertop">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center p-sm-2">
+          <a href="" id="scrollToTop"><i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+            <span class="text-white">Back To Top</span></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="py-sm-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 p-2 centerdiv">
-                    <img src="web/images/logo (5) (1).jpg" class=" w-50 mb-2" alt="" />
-                    <li><a href="">🌱 Eco-friendly</a></li>
-                    <li><a href="">🧼 Washable</a></li>
-                    <li><a href="">🏃 All-Day Comfort</a></li>
-                </div>
-                <div class="col-lg-3 col-sm-6 p-2">
-                    <h4>Customer Support</h4>
-                    <ul>
-                        <li><a href="mailto:contact@duveworld.com">Email Us</a></li>
-                        <li><a href="">Order Status</a></li>
-                        <li><a href="">Returns & Exchanges</a></li>
-                        <li><a href="">Store Finder</a></li>
-                        <li><a href="">Customer Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 p-2">
-                    <h4>Account</h4>
-                    <ul>
-                        <li><a href="">Log In</a></li>
-                        <li><a href="">Create an Account</a></li>
-                        <li><a href="">My Orders</a></li>
-                        <li><a href="">DUVE VIP</a></li>
-                        <li><a href="">DUVE Rewards</a></li>
-                        <li><a href="">Gift Cards</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 p-2">
-                    <h4>Our Products</h4>
-                    <ul>
-                        <li><a href="shoes.html">Shoes</a></li>
-                        <li><a href="shoes.html">Men</a></li>
-                        <li><a href="shoes.html">Women</a></li>
-                        <li><a href="shoes.html">Kids</a></li>
-                        <li><a href="shoes.html">Sports & Lifestyle</a></li>
-                    </ul>
-                </div>
-            </div>
+  <footer class="py-sm-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 p-2 mt-3 mt-sm-0 centerdiv">
+          <a href="index.html"><img src="web/images/logo (5) (1).jpg" class="w-50 mb-2" alt="" /></a>
+         <p class="text-white">Sneakers that feel like second skin.</p>
         </div>
-    </footer>
+        <div class="col-lg-3 col-sm-6 p-2 mb-3 mb-sm-0 centerdiv">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shoes.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+             <li><a href="#" onclick="login(event)">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-2 mb-3 mb-sm-0 centerdiv ">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="">Shipping Policy</a></li>
+            <li><a href="">Return Policy</a></li>
+            <li><a href="">Privacy Policy</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-2 mb-3 mb-sm-0 centerdiv">
+          <h4>Follow Us</h4>
+         
+            <a href="mailto:contact@duveworld.com"><i class="fa-brands fa-instagram"></i></a>        
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+           
+          
+          <p class="text-white">Made with Love in India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <section style="background-color: black">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <a href="https://tssgtech.com/" target="_blank">
-                        <p style="
+  <section class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="https://tssgtech.com/" target="_blank">
+            <p style="
                   text-align: center;
                   padding: 10px;
                   margin: 0;
                   color: white;
                 ">
-                            Copyright Tssg-Tech pvt.ltd © 2025 All Rights Reserved
-                        </p>
-                    </a>
-                </div>
-            </div>
+              Copyright Tssg-Tech pvt.ltd © 2025 All Rights Reserved
+            </p>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
- <!-- login form -->
-    <section class="">
-      <div class="login-container">
-        <div class="bg-dark p-5 border border-yellow inner-login">
+  <!-- login form -->
+  <section class="">
+    <div class="login-container">
+      <div class="bg-dark p-5 border border-yellow inner-login">
         <i class="fa-solid fa-xmark closingloginform"></i>
         <h2>Login</h2>
         <form action="/login" method="POST">
@@ -384,23 +401,14 @@
           </div>
           <div class="form-group">
             <label for="password">Password: </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              autocomplete="off"
-            />
+            <input type="password" id="password" name="password" required autocomplete="off" />
           </div>
           <div class="form-group">
-            <button
-              type="submit"
-              style="
+            <button type="submit" style="
                 background-color: #000000;
                 color: #ffffff;
                 padding: 0.5rem 1rem;
-              "
-            >
+              ">
               Login
             </button>
           </div>
@@ -412,12 +420,12 @@
           </p>
         </div>
       </div>
-      </div>
-    </section>
-    <!-- sign up form -->
-    <section>
-      <div class="signup-container">
-         <div class="bg-dark p-5 border border-yellow inner-signup">
+    </div>
+  </section>
+  <!-- sign up form -->
+  <section>
+    <div class="signup-container">
+      <div class="bg-dark p-5 border border-yellow inner-signup">
         <i class="fa-solid fa-xmark closingsignupform"></i>
         <h2>Sign up</h2>
         <form action="" method="POST">
@@ -431,33 +439,18 @@
           </div>
           <div class="form-group">
             <label for="pno">Phone No: </label>
-            <input
-              type="tel"
-              id="pno"
-              name="pno"
-              placeholder="enter your number"
-              required
-            />
+            <input type="tel" id="pno" name="pno" placeholder="enter your number" required />
           </div>
           <div class="form-group">
             <label for="password">Password: </label>
-            <input
-              type="password"
-              id="signupPassword"
-              name="password"
-              required
-              autocomplete="off"
-            />
+            <input type="password" id="signupPassword" name="password" required autocomplete="off" />
           </div>
           <div class="form-group">
-            <button
-              type="submit"
-              style="
+            <button type="submit" style="
                 background-color: #000000;
                 color: #ffffff;
                 padding: 0.5rem 1rem;
-              "
-            >
+              ">
               Login
             </button>
           </div>
@@ -467,15 +460,20 @@
             click here to login Now, <a href="" onclick="login(event)">Login</a>
           </p>
         </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-
-    <script src="web/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <!-- link aos animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="web/js/script.js"></script>
 </body>
 
 </html>

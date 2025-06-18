@@ -58,6 +58,21 @@ hiddenmenuclosing.addEventListener("click", function () {
   hidden_menu.style.right = "-350px";
 })
 
+// icons show after scolling the screen
+ window.addEventListener('scroll', function () {
+    const scrollY = window.scrollY;
+    const we1 = document.querySelector('.we1');
+    const we2 = document.querySelector('.we2');
+
+    // Adjust the value (like 100) as per your navbar height
+    if (scrollY > 100) {
+      we1.classList.add('visible-icon');
+      we2.classList.add('visible-icon');
+    } else {
+      we1.classList.remove('visible-icon');
+      we2.classList.remove('visible-icon');
+    }
+  });
 
 
 const swiper = new Swiper('.slider-wrapper', {
@@ -96,6 +111,7 @@ const swiper = new Swiper('.slider-wrapper', {
     document.getElementById("slide3"),
     document.getElementById("slide4"),
     document.getElementById("slide5"),
+    
   ];
 
   let current = 0;
